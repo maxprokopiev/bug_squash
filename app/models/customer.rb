@@ -4,5 +4,6 @@ class Customer < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :terms_and_conditions, acceptance: true
+  validates :terms_and_conditions, acceptance:  { accept: true }
+
 end
