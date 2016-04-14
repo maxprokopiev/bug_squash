@@ -1,0 +1,10 @@
+# Language setting
+language: ruby
+
+# Version number
+ruby:
+  - 2.3.0
+
+# The path for Xunit to output test reports
+env:
+  - XUNIT_FILE=shippable/testresults/result.xml
