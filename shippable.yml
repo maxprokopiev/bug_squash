@@ -1,10 +1,10 @@
 # Language setting
 language: ruby
-
-# Version number
-ruby:
-  - 2.3.0
+rvm: 2.2
 
 # The path for Xunit to output test reports
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
+
+script:
+  - bundle exec rspec spec
